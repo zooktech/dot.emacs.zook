@@ -42,7 +42,8 @@
 (ido-mode 1)
 
 (require 'web-mode)
-;; (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 

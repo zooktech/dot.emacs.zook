@@ -23,6 +23,9 @@ An incomplete list of features:
 - Go back to previous edit location when reopening a file.
 - Copy whole line with "C-c C-k".
 
+Useful shortcuts:
+- "C-x h": mark whole buffer.
+
 Includes files from these two fantastic emacs configs:
 - Emacs Live: https://github.com/overtone/emacs-live
 - emacs-for-clojure: https://github.com/flyingmachine/emacs-for-clojure
