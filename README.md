@@ -1,13 +1,6 @@
 # dot.emacs.zook
 
-A .emacsd for Clojure and Javascript development mainly.
-
-Includes files from these two fantastic emacs configs:
-- Emacs Live: https://github.com/overtone/emacs-live
-- emacs-for-clojure: https://github.com/flyingmachine/emacs-for-clojure
-
-Also helped and inspired by:
-- https://www.masteringemacs.org/article/introduction-to-ido-mode
+An .emacs.d configuration. Mainly for Clojure and Javascript development.
 
 An incomplete list of features:
 - undo-tree.
@@ -25,3 +18,10 @@ An incomplete list of features:
 - Two finger scrolling on OSX.
 - "C-x C-b" for ibuffer.
 - ido-mode.
+
+Includes files from these two fantastic emacs configs:
+- Emacs Live: https://github.com/overtone/emacs-live
+- emacs-for-clojure: https://github.com/flyingmachine/emacs-for-clojure
+
+Other notes and references:
+- https://www.masteringemacs.org/article/introduction-to-ido-mode
