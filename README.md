@@ -11,13 +11,17 @@ An incomplete list of features:
 - clj-refactor.
 - web-mode (for React JSX editing, amongst other things).
 - cyberpunk-theme.
-- browe-kill-ring.
+- M-y for browe-kill-ring.
 - tango-dark theme by default.
 - no menu bar.
 - sync with OSX clipboard.
 - Two finger scrolling on OSX.
 - "C-x C-b" for ibuffer.
 - ido-mode.
+- M-/ for hippie expand (auto-complete from text on the page).
+- Search forward (C-s) and back (C-r) are regexp by default (C-M-s and C-M-r without).
+- Go back to previous edit location when reopening a file.
+- Copy whole line with "C-c C-k".
 
 Includes files from these two fantastic emacs configs:
 - Emacs Live: https://github.com/overtone/emacs-live
