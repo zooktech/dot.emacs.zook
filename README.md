@@ -24,7 +24,9 @@ An incomplete list of features:
 - Copy whole line with "C-c C-k".
 
 Useful shortcuts:
-- "C-x h": mark whole buffer.
+- C-x h: mark whole buffer.
+- M-^: join line with one above.
+- C-x <RIGHT> / C-x <LEFT>: switch to next / previous buffer.
 
 Includes files from these two fantastic emacs configs:
 - Emacs Live: https://github.com/overtone/emacs-live

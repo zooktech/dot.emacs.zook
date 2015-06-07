@@ -44,6 +44,16 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
+(defun web-mode-config ()
+  (setq web-mode-attr-indent-offset 2)
+  (setq web-mode-enable-auto-pairing t)
+  (setq web-mode-enable-css-colorization t)
+  (setq web-mode-enable-current-element-highlight t)
+  (setq web-mode-enable-auto-closing t)
+  (setq web-mode-tag-auto-close-style 2)
+)
+(add-hook 'web-mode-hook  'web-mode-config)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 
