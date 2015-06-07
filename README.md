@@ -1,5 +1,7 @@
 # dot.emacs.zook
 
+## Overview
+
 An .emacs.d configuration. Mainly for Clojure and Javascript development.
 
 An incomplete list of features:
@@ -29,6 +31,20 @@ Useful shortcuts:
 Includes files from these two fantastic emacs configs:
 - Emacs Live: https://github.com/overtone/emacs-live
 - emacs-for-clojure: https://github.com/flyingmachine/emacs-for-clojure
+
+## Literate Programming
+
+This configuration makes use of the complemantary features of Emacs 
+
+- [Org-mode](http://orgmode.org/) and 
+- [Babel](http://orgmode.org/worg/org-contrib/babel/)
+
+to enable the configuration both to be [documented](org/config.org) and dynamically loaded from the same source file. 
+
+This is a hallmark of [Literate Programming](http://www.literateprogramming.com/)
+
+
+## References
 
 Other notes and references:
 - https://www.masteringemacs.org/article/introduction-to-ido-mode
