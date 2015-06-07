@@ -75,6 +75,9 @@
 )
 (add-hook 'web-mode-hook  'web-mode-config)
 
+(require 'markdown-mode)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (load "osx.el")

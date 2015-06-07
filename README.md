@@ -25,6 +25,7 @@ An incomplete list of features:
 - Search forward (C-s) and back (C-r) are regexp by default (C-M-s and C-M-r without).
 - Go back to previous edit location when reopening a file.
 - Copy whole line with "C-c C-k".
+- markdown-mode.
 
 Useful shortcuts:
 - C-x h: mark whole buffer.
@@ -34,6 +35,9 @@ Useful shortcuts:
 Includes files from these two fantastic emacs configs:
 - Emacs Live: https://github.com/overtone/emacs-live
 - emacs-for-clojure: https://github.com/flyingmachine/emacs-for-clojure
+
+Packages to evaluate:
+- https://github.com/auto-complete/auto-complete
 
 ## Literate Programming
 
