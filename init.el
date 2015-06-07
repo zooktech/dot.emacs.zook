@@ -52,8 +52,6 @@
   (setq mouse-sel-mode t)
   )
 
-(global-set-key (kbd "M-/") 'hippie-expand)
-
 (require 'undo-tree)
 (global-undo-tree-mode)
 

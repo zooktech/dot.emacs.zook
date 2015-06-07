@@ -1,3 +1,16 @@
+* Globals
+
+** Hippie Expand
+
+   Hippie Expand looks at the word before point and tries to expand it
+   in various ways including expanding from a fixed list. But what does
+   this have to do with hippies? :-D
+
+   #+BEGIN_SRC emacs-lisp
+     (global-set-key (kbd "M-/") 'hippie-expand)
+   #+END_SRC
+
+
 * Macintosh Specific Setup
 
 ** # is broken on UK Macs
