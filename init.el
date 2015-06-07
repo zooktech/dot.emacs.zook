@@ -1,14 +1,36 @@
 (require 'package)
 
-(add-to-list 'package-archives
-	     ;; '("melpa" . "http://melpa.org/packages/")
-	     '("melpa-stable" . "http://stable.melpa.org/packages/")
-	     t)
-(when (< emacs-major-version 24)
+(setq package-archives '(("org" . "http://orgmode.org/elpa/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+;; (add-to-list 'package-archives
+;;	     ;; '("melpa" . "http://melpa.org/packages/")
+;;             '("org" . "http://orgmode.org/elpa/")
+;;	     '("melpa-stable" . "http://stable.melpa.org/packages/")
+;;	     t)
+
+;; (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+;;  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
 (package-initialize)
+
+;; This bootstraps us if we don't have anything
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+;; This installs elpa packages if we haven't done that yet
+(defun maybe-install-and-require (p)
+  (when (not (package-installed-p p))
+    (package-install p))
+  (require p))
+
+;; org-mode always needs to be installed in an emacs where it isn't loaded.
+(when (not (package-installed-p 'org-plus-contrib))
+  (package-install 'org-plus-contrib))
+(require 'org)
+
+(org-babel-load-file (concat user-emacs-directory "org/config.org"))
 
 (load-theme 'tango-dark t)
 ;;(load-theme 'cyberpunk t)
@@ -31,6 +53,10 @@
   )
 
 (global-set-key (kbd "M-/") 'hippie-expand)
+
+;; (windmove-default-keybindings)
+
+;; (define-key global-map (kbd "C-c 3") (lambda () (interactive) (insert "#")))
 
 (require 'undo-tree)
 (global-undo-tree-mode)
