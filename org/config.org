@@ -1,0 +1,26 @@
+* Globals
+
+** Hippie Expand
+
+   Hippie Expand looks at the word before point and tries to expand it
+   in various ways including expanding from a fixed list. But what does
+   this have to do with hippies? :-D
+
+   #+BEGIN_SRC emacs-lisp
+     (global-set-key (kbd "M-/") 'hippie-expand)
+   #+END_SRC
+
+
+* Macintosh Specific Setup
+
+** # is broken on UK Macs
+
+   On UK keyboards shift-3 is bound to £. This is a real pain. The #
+   character is usually bound to M-3. This also causes problems,
+   especially with things like window-number modes. The # problem is
+   solved with this bit of code below.
+   
+   #+BEGIN_SRC emacs-lisp
+     (define-key global-map (kbd "C-c 3") (lambda () (interactive) (insert "#")))
+   #+END_SRC
+
