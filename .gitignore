@@ -1,3 +1,4 @@
+org/*.el
 places
 cider-history
 backups
