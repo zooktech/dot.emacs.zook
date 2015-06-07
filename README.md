@@ -11,6 +11,7 @@ An incomplete list of features:
 - pretty rainbow parens.
 - cider (for Clojure).
 - clj-refactor.
+- org-mode.
 - web-mode (for React JSX editing, amongst other things).
 - cyberpunk-theme.
 - M-y for browe-kill-ring.
