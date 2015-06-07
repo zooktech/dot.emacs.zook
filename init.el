@@ -54,10 +54,6 @@
 
 (global-set-key (kbd "M-/") 'hippie-expand)
 
-;; (windmove-default-keybindings)
-
-;; (define-key global-map (kbd "C-c 3") (lambda () (interactive) (insert "#")))
-
 (require 'undo-tree)
 (global-undo-tree-mode)
 
